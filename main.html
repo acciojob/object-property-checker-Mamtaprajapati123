@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
   <title>hasKey Function Example</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <script>
+    // Define the sampleObject
+    var sampleObject = {
+      name: "John",
+      age: 30,
+      city: "New York"
+    };
+    
+    // Define the hasKey function
+    function hasKey(key) {
+      return key in window.sampleObject;
+    }
+    
+    // Test the hasKey function
+    console.log(hasKey("name")); // true
+    console.log(hasKey("address")); // false
+  </script>
 
 </body>
-
 </html>
